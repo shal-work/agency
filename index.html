@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="descriptin" content=" ">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <section class="section">
+
+        <div class="content">
+            <div class="flex-row">
+				<div class="sidebar">
+                    <div class="sidebar__sign">
+                        <h1>Sign up</h1>
+                    </div>
+				</div>
+                <form action="#" enctype="multipart/form-data" method="POST">
+                    <div class="content-form flex-column">
+                        <h2>New user?</h2>
+                        <h3 class="clip">Use the form below to create your account.</h3>
+                        <div class="flex-row">
+                            <div class="content-form__left flex-column">
+                                <label for="firstname" class="animated fadeInUp">First Name</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Alice" required class="animated fadeInUp">
+                                <hr class="hr-color">
+                                <label for="nationality" class="animated fadeInUp" style="animation-delay: 600ms;">Nationality</label>
+                                <select name="nationality" id="nationality" class="animated fadeInUp" style="animation-delay: 600ms;">
+                                        <option value="American">American</option>
+                                        <option value="Belarusian">Belarusian</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="China">China</option>
+                                        <option value="India">India</option>
+                                        <option value="South Africa">South Africa</option>
+                                </select>
+                                <hr class="hr-color" m-b_16-3>
+                                <label for="day" class="animated fadeInUp" style="animation-delay: 1200ms;">Date of Birth</label>
+                                <div class="flex-row animated fadeInUp" style="animation-delay: 1200ms;">
+                                    <div class="flex-column">
+                                        <select name="day" id="day">
+                                            <option value="1">1</option>
+                                        </select>
+                                        <hr class="hr-color hr-color-day">
+                                    </div>
+                                    <div class="flex-column">
+                                        <select name="month" id="month">
+                                            <!-- <option value="January">January</option> -->
+                                        </select>
+                                        <hr class="hr-color hr-color-month">
+                                    </div>
+                                    <div class="flex-column">
+                                        <select name="year" id="year">
+                                            <option value="2000">2000</option>
+                                        </select>
+                                        <hr class="hr-color hr-color-year">
+                                    </div>
+                                    
+                                </div>
+                                <!-- <hr class="hr-color" m-b_17-4> -->
+                                <label for="userPassword" class="animated fadeInUp" style="animation-delay: 1800ms;">Password</label>
+                                <input id="userPassword" type="password" name="userPassword" required 
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    class="animated fadeInUp" style="animation-delay: 1800ms;">
+                                <hr class="hr-color" m-t_11-4 m-b_85>
+                            </div>
+                            <div class="flex-column">
+                                <label for="lastname" class="animated fadeInUp" style="animation-delay: 300ms;">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Miller" required class="animated fadeInUp" style="animation-delay: 300ms;">
+                                <hr class="hr-color" m-b_16-3>
+                                <label for="e-mail" class="animated fadeInUp" style="animation-delay: 900ms;">E-mail</label>
+                                <div class="flex-row">
+                                    <input type="email" id="e-mail" name="e-mail" placeholder="alice.miller@yahoo.com" 
+                                        required pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" 
+                                        class="animated fadeInUp" style="animation-delay: 900ms;">
+                                    <span></span>
+                                </div>
+                                <hr class="hr-color" m-b_16-3> 
+                                <label for="gender" class="animated fadeInUp" style="animation-delay: 1500ms;">Gender</label>  
+                                <div class="form_radio animated fadeInUp" style="animation-delay: 1500ms;">
+                                    <input id="mail" type="radio" name="gender" value="male" checked>
+                                    <label for="mail">Male</label>
+                                    <input id="female" type="radio" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                                
+                                <label for="confirmPassword" class="animated fadeInUp" style="animation-delay: 2100ms;">Confirm Password</label>
+                                <input id="confirmPassword" type="password" name="confirmPassword" required
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                    class="animated fadeInUp" style="animation-delay: 2100ms;">
+                                <hr class="hr-color" m-t_11-4 m-b_85>
+                            </div>
+                        </div>
+                        <div class="flex-row content-form__footer">
+                            <div class="content-form__footer_link">
+                                <label>Have an account?</label>
+                                <a href="#">Login</a>
+                            </div>
+                            <button class="button button-order animated" name="submit" type="submit">Complete Signup</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+    
+
+    </section>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
